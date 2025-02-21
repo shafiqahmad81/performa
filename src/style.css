@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'CocoSharp Trial';
+  src: url('./assets/fonts/CocoSharpTrial-Regular.eot');
+  src: url('./assets/fonts/CocoSharpTrial-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CocoSharpTrial-Regular.woff2') format('woff2'),
+      url('./assets/fonts/CocoSharpTrial-Regular.woff') format('woff'),
+      url('./assets/fonts/CocoSharpTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CocoSharp Trial';
+  src: url('./assets/fonts/CocoSharpTrial-Bold.eot');
+  src: url('./assets/fonts/CocoSharpTrial-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CocoSharpTrial-Bold.woff2') format('woff2'),
+      url('./assets/fonts/CocoSharpTrial-Bold.woff') format('woff'),
+      url('./assets/fonts/CocoSharpTrial-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CocoSharp Trial';
+  src: url('./assets/fonts/CocoSharpTrial-Extrabold.eot');
+  src: url('./assets/fonts/CocoSharpTrial-Extrabold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CocoSharpTrial-Extrabold.woff2') format('woff2'),
+      url('./assets/fonts/CocoSharpTrial-Extrabold.woff') format('woff'),
+      url('./assets/fonts/CocoSharpTrial-Extrabold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+
+@theme {
+
+  /* font-family */
+
+  --font-CocoSharp: "CocoSharp Trial", sans-serif; 
+
+  /* color */
+
+  --color-primary: #313131;
+
+  /* fonts size */
+
+  --text-extra-xs: 0.813rem;  /* 13px */
+  --text-4.5xl: 2.75rem;  /* 44px */
+
+  /* --border radius */
+
+  --radius-extra-lg: 0.625rem;  /* 10px */
+
+  /* spacing */
+
+  --spacing-3.7: 0.975rem; /* 15.6px */
+  --spacing-4.9: 1.188rem; /* 19px */
+  --spacing-5.5: 1.313rem; /* 21px */
+  --spacing-6.5: 1.625rem; /* 26px */
+  --spacing-13: 3.3rem; /* 52px */
+
+
+}
+
+
+@layer base{
+  h1{
+    @apply text-[6.236rem] font-extrabold leading-[6.644rem]
+  }
+  h2{
+    @apply text-4.5xl font-extrabold leading-13
+  }
+  h5{
+    @apply text-xl font-bold
+  }
+  p{
+    @apply text-base font-normal leading-6.5
+  }
+}
+
+@layer components{
+  .btn{
+    @apply bg-primary px-5.5 py-4.9 rounded-extra-lg text-white text-extra-xs leading-3.7 font-bold
+  }
+}
+
+@layer utilities{
+  .container {
+    @apply mx-auto px-2;
+    @media (width >= 90rem /* 1440px */) {
+        max-width: 90rem /* 1440px */;
+        padding-inline: 4rem  /* 64px */; 
+    }
+  }
+}
+
