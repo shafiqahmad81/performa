@@ -1,18 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Performa</title>
-  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body class="text-primary">
-  <div class="container">
-    <h1 class="text-9xl font-CocoSharp">performa</h1>
+<body class="font-CocoSharp">
+  <div class="text-center bg-white py-6 text-xs text-primary">
+    <span>FREE SHIPPING ON EVERY ORDER</span>
   </div>
+
+  <!-- header section -->
+
+  <header class="bg-secondary relative flex items-center justify-between py-6 lg:py-8 px-4 xl:px-[7.5rem]">
+    <!-- Logo -->
+    <div class="flex items-center ">
+      <img src="src/assets/icon/performa-logo.png" alt="Performa Logo" class="h-8">
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex space-x-6">
+      <a href="#" class="hover:text-gray-500">Membership</a>
+      <a href="#" class="hover:text-gray-500">Products</a>
+      <a href="#" class="hover:text-gray-500">Stories</a>
+      <a href="#" class="hover:text-gray-500">What’s CBD</a>
+      <a href="#" class="hover:text-gray-500">Mission</a>
+      <a href="#" class="hover:text-gray-500">Quality</a>
+      <a href="#" class="hover:text-gray-500">Blogs</a>
+    </nav>
+
+    <!-- Buttons -->
+    <div class="hidden lg:flex items-center space-x-4">
+      <button class="btn">Contact Us</button>
+      <button class="p-3.7 border border-primary/20 rounded-extra-lg">
+        <img src="src/assets/icon/shopping-bag.png" alt="Cart" class="h-6">
+      </button>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="lg:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobile-menu" class="hidden absolute top-0 left-0 bg-secondary right-0 z-40 h-screen p-6">
+      <button id="close-menu" class="hidden z-50 absolute top-6 right-4"><svg xmlns="http://www.w3.org/2000/svg"
+          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="flex items-center">
+        <img src="src/assets/icon/performa-logo.png" alt="Performa Logo" class="h-8">
+      </div>
+
+      <nav class=" flex flex-col items-center space-y-4 text-lg">
+        <a href="#" class="hover:text-gray-500">Membership</a>
+        <a href="#" class="hover:text-gray-500">Products</a>
+        <a href="#" class="hover:text-gray-500">Stories</a>
+        <a href="#" class="hover:text-gray-500">What’s CBD</a>
+        <a href="#" class="hover:text-gray-500">Mission</a>
+        <a href="#" class="hover:text-gray-500">Quality</a>
+        <a href="#" class="hover:text-gray-500">Blogs</a>
+      </nav>
+      <div class="flex justify-center">
+        <button class="btn">Contact Us</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class=" bg-secondary relative">
+
+
+    <div class="">
+      <div class="flex flex-col sm:flex-row items-center">
+        <div class="w-full sm:w-[47.570%]">
+          <img src="src/assets/img/hero-img.png" alt="Hero Image" class="w-full" />
+        </div>
+        <div class="w-full sm:w-[calc(100%-47.570%)] pl-[6.667%] pr-4">
+          <h1 class="">Perfor Recover Repeat.</h1>
+          <p class="max-w-[31.5rem] opacity-60 text-xl">“Focused on maximizing your recovery so that you can be ready to
+            perfom at
+            your
+            peak.”
+          </p>
+        </div>
+      </div>
+
+      <div class="px-8 lg:px-16 pb-10 lg:pb-17 flex items-center justify-center gap-12 xl:gap-24 flex-wrap mt-17">
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
+          </div>
+        </div>
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
+          </div>
+        </div>
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
+          </div>
+        </div>
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How We've Helped -->
+  <section class="container text-center py-12">
+    <div class="md:px-5 lg:px-10 xl:px-24">
+      <h2 class="text-3xl font-bold mb-14">How We've Helped</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-7 mt-6">
+        <div>
+          <div class="relative ">
+            <img src="src/assets/img/perform-img-1.png" class="w-full" />
+            <div
+              class="w-16 lg:w-24 absolute -bottom-8 lg:-bottom-12 left-1/2 p-4 lg:p-6.5 -translate-x-1/2 rounded-full bg-white">
+              <img src="src/assets/icon/performa-icon-1.png" alt="performa">
+            </div>
+          </div>
+          <h5 class="mt-10 lg:mt-17">The Athletes</h5>
+          <p class="opacity-80 max-w-[206px] mx-auto mt-2.5">“It has helped speed up my recovery</p>
+        </div>
+        <div>
+          <div class="relative ">
+            <img src="src/assets/img/perform-img-2.png" class="w-full" />
+            <div
+              class="w-16 lg:w-24 absolute -bottom-8 lg:-bottom-12 left-1/2 p-4 lg:p-6.5 -translate-x-1/2 rounded-full bg-white">
+              <img src="src/assets/icon/performa-icon-2.png" alt="performa">
+            </div>
+          </div>
+          <h5 class="mt-10 lg:mt-17">The high performers</h5>
+          <p class="opacity-80 max-w-[206px] mx-auto mt-2.5">“Reduces my anxiety and doubts”</p>
+        </div>
+        <div>
+          <div class="relative ">
+            <img src="src/assets/img/perform-img-3.png" class="w-full" />
+            <div
+              class="w-16 lg:w-24 absolute -bottom-8 lg:-bottom-12 left-1/2 p-4 lg:p-6.5 -translate-x-1/2 rounded-full bg-white">
+              <img src="src/assets/icon/performa-icon-3.png" alt="performa">
+            </div>
+          </div>
+          <h5 class="mt-10 lg:mt-17">The creatives</h5>
+          <p class="opacity-80 max-w-[206px] mx-auto mt-2.5">“Reduces my anxiety and doubts”</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-14">
+        <button class="btn">Hea more</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-12 bg-secondary">
+    <div class="container">
+      <div
+        class="pl-10 lg:pl-20 xl:pl-[152px] pr-8 lg:pr-16 xl:pr-36 flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-12 xl:gap-24">
+        <div class="text-left max-w-[200px]">
+          <h2 class="">Benefits</h2>
+          <p class="opacity-80 py-4">How we help you stay on top of your game</p>
+          <p class="opacity-80 font-bold">You’ve earned this rest</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-6">
+          <div class="max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-1.png" />
+            <h4 class="h4">Lesse your soreness and pain
+            </h4>
+          </div>
+          <div class="max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-1.png" />
+            <h4 class="h4">Sports</h4>
+          </div>
+          <div class="max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-1.png" />
+            <h4 class="h4 text-sm lg:text-xl max-w-[183px]">Control your fears and quell your anxiety to excel</h4>
+          </div>
+          <div class="max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-1.png" />
+            <h4 class="h4 text-sm lg:text-xl max-w-[160px]">Enchance your recovery with better sleep</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Need Help Section -->
+  <section class="py-12 text-center">
+    <h2 class="text-3xl font-bold">Need Help?</h2>
+    <p class="text-gray-500">Get in touch with us.</p>
+    <form class="mt-6">
+      <input type="text" placeholder="First Name" class="border p-2 mr-2" />
+      <input type="text" placeholder="Last Name" class="border p-2 mr-2" />
+      <input type="email" placeholder="Email" class="border p-2" />
+      <button class="bg-black text-white px-4 py-2 rounded ml-2">Talk to a Human</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white p-6 text-center">
+    <div class="grid grid-cols-4 gap-6">
+      <div>
+        <p class="text-lg font-bold">LOGO</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: contact@performa.com</p>
+        <form class="mt-4">
+          <input type="email" placeholder="Your email" class="p-2 rounded" />
+          <button class="bg-white text-black px-4 py-2 rounded ml-2">Stay in Touch</button>
+        </form>
+      </div>
+      <div><a href="#">Membership</a><br /><a href="#">Products</a><br /><a href="#">Stories</a></div>
+      <div><a href="#">What’s CBD</a><br /><a href="#">Mission</a><br /><a href="#">Quality</a></div>
+      <div>
+        <h6>Follow Us</h6>
+        <div class="flex space-x-4">
+          <span>FB</span>
+          <span>IG</span>
+          <span>TW</span>
+        </div>
+      </div>
+    </div>
+    <p class="mt-6">© Performa 2021</p>
+    <nav>
+      <a href="#" class="mr-4">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </nav>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+  <!-- <footer class="bg-black text-white p-6 text-center">
+        <p>© Performa 2021</p>
+        <nav>
+            <a href="#" class="mr-4">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+    </footer> -->
 </body>
 
 </html>

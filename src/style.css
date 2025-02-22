@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'CocoSharp Trial';
   src: url('./assets/fonts/CocoSharpTrial-Regular.eot');
   src: url('./assets/fonts/CocoSharpTrial-Regular.eot?#iefix') format('embedded-opentype'),
@@ -32,7 +32,43 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+} */
+@font-face {
+  font-family: 'CocoSharp Trial';
+  src: url('./assets/fonts/CocoSharpTrial-Regular.eot');
+  src: url('./assets/fonts/CocoSharpTrial-Regular.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CocoSharpTrial-Regular.woff2') format('woff2'),
+      url('./assets/fonts/CocoSharpTrial-Regular.woff') format('woff'),
+      url('./assets/fonts/CocoSharpTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'CocoSharp Trial';
+  src: url('./assets/fonts/CocoSharpTrial-Extrabold.eot');
+  src: url('./assets/fonts/CocoSharpTrial-Extrabold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CocoSharpTrial-Extrabold.woff2') format('woff2'),
+      url('./assets/fonts/CocoSharpTrial-Extrabold.woff') format('woff'),
+      url('./assets/fonts/CocoSharpTrial-Extrabold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CocoSharp Trial';
+  src: url('./assets/fonts/CocoSharpTrial-Bold.eot');
+  src: url('./assets/fonts/CocoSharpTrial-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/CocoSharpTrial-Bold.woff2') format('woff2'),
+      url('./assets/fonts/CocoSharpTrial-Bold.woff') format('woff'),
+      url('./assets/fonts/CocoSharpTrial-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @import "tailwindcss";
 
@@ -41,11 +77,16 @@
 
   /* font-family */
 
-  --font-CocoSharp: "CocoSharp Trial", sans-serif; 
+  --font-CocoSharp: "CocoSharp Trial", sans-serif;
+
+   /*  breakpoint  */
+
+   --breakpoint-1xl: 90rem;
 
   /* color */
 
   --color-primary: #313131;
+  --color-secondary: #F9F9F9;
 
   /* fonts size */
 
@@ -63,6 +104,7 @@
   --spacing-5.5: 1.313rem; /* 21px */
   --spacing-6.5: 1.625rem; /* 26px */
   --spacing-13: 3.3rem; /* 52px */
+  --spacing-17: 4.5rem; /* 72px */
 
 
 }
@@ -70,13 +112,19 @@
 
 @layer base{
   h1{
-    @apply text-[6.236rem] font-extrabold leading-[6.644rem]
+    @apply text-5xl md:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] max-w-[28.313rem] mb-4
   }
   h2{
     @apply text-4.5xl font-extrabold leading-13
   }
+  h4{
+    @apply text-white text-base lg:text-2xl font-extrabold
+  }
   h5{
     @apply text-xl font-bold
+  }
+  h6{
+    @apply text-base font-extrabold text-black leading-6
   }
   p{
     @apply text-base font-normal leading-6.5
@@ -87,15 +135,23 @@
   .btn{
     @apply bg-primary px-5.5 py-4.9 rounded-extra-lg text-white text-extra-xs leading-3.7 font-bold
   }
+  .hero-card-item{
+    @apply text-center relative md:before:absolute before:top-5 before:bottom-6 before:-right-6 xl:before:-right-12 before:w-px before:bg-primary/20
+  }
+  .h4{
+    @apply absolute top-1/2 left-4 lg:left-9 max-w-32 -translate-y-1/2
+  }
+  
 }
 
 @layer utilities{
   .container {
     @apply mx-auto px-2;
     @media (width >= 90rem /* 1440px */) {
-        max-width: 90rem /* 1440px */;
+        max-width: var(--breakpoint-1xl) /* 1440px */;
         padding-inline: 4rem  /* 64px */; 
     }
   }
 }
+
 
