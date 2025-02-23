@@ -267,7 +267,7 @@
   <!-- Tinctures section -->
 
   <section class="container mt-[7.5rem]">
-    <div class="pl-10 pr-[9.313rem] flex gap-14">
+    <div class="pl-10 pr-10 lg:pr-[9.313rem] flex flex-col md:flex-row gap-14">
       <div class="h-auto">
         <img src="src/assets/img/tinctures-img.png" alt="perfoma">
       </div>
@@ -297,25 +297,25 @@
 
   <!-- Get started on your journey -->
 
-  <section class="max-w-[90rem] mx-auto mt-[7.5rem] pr-32">
-    <div class="flex gap-24">
-      <div class="flex gap-5.5">
-        <div class="w-[24.625rem]">
+  <section class="max-w-[90rem] mx-auto my-[7.5rem] lg:pr-16 xl:pr-32">
+    <div class="flex flex-col lg:flex-row gap-12 xl:gap-24">
+      <div class="flex justify-center px-6 md:px-0 gap-5.5">
+        <div class="w-80 xl:w-[24.625rem]">
           <img src="src/assets/img/get-started-img-1.png" alt="perfoma">
         </div>
-        <div class="w-[24.625rem]">
+        <div class="w-80 xl:w-[24.625rem]">
           <img src="src/assets/img/get-started-img-2.png" alt="perfoma">
         </div>
 
       </div>
-      <div>
+      <div class="px-6 lg:px-0">
         <h2>Get started on your journey</h2>
-        <p class="pt-7 pb-3.5 opacity-80 text-lg">Choose the one that fits you best</p>
+        <p class="pt-7 pb-3.5 opacity-80 font-bold text-lg">Started kit</p>
         <p class="opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate convallis
           sagittis, ut ut in pellentesque magna.</p>
 
-        <div class="flex items-center justify-between pt-8 pb-4">
-          <a href="#" class="font-sans">$67,00</a>
+        <div class="flex items-center justify-between pt-12 pb-4">
+          <a href="#" class="font-sans text-4xl font-extrabold">$67,00</a>
           <button class="btn">Learn more</button>
         </div>
       </div>
@@ -323,14 +323,21 @@
   </section>
 
   <!-- Need Help Section -->
-  <section class="py-12 text-center">
-    <h2 class="text-3xl font-bold">Need Help?</h2>
-    <p class="text-gray-500">Get in touch with us.</p>
-    <form class="mt-6">
-      <input type="text" placeholder="First Name" class="border p-2 mr-2" />
-      <input type="text" placeholder="Last Name" class="border p-2 mr-2" />
-      <input type="email" placeholder="Email" class="border p-2" />
-      <button class="bg-black text-white px-4 py-2 rounded ml-2">Talk to a Human</button>
+  <section class="max-w-[44.313rem] mx-auto px-6 md:px-[6.625rem] pt-13 pb-10 bg-secondary text-center">
+    <h2 class="">Need Help?</h2>
+    <p class="mt-4 opacity-80 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis odio dictum
+      amet in. Mi
+      molestie
+    </p>
+    <form class="mt-9 flex flex-col gap-4">
+      <div class="flex flex-col sm:flex-row gap-4">
+        <input type="text" placeholder="First Name" class="w-full sm:w-1/2 help-input" />
+        <input type="text" placeholder="Last Name" class="w-full sm:w-1/2 help-input " />
+      </div>
+      <input type="email" placeholder="Email" class="help-input" />
+      <div class="mt-8">
+        <button class="btn">Talk to a Human</button>
+      </div>
     </form>
   </section>
 

@@ -141,6 +141,9 @@
   .h4{
     @apply absolute top-1/2 left-4 lg:left-9 max-w-32 -translate-y-1/2
   }
+  .help-input{
+    @apply bg-white/95 px-5 py-4.9 rounded-extra-lg placeholder:text-primary/40 focus:outline-0
+  }
   
 }
 
