@@ -12,3 +12,29 @@ closeMenu.addEventListener('click', () => {
     closeMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('hidden');
 });
+
+
+// swiper slider section
+
+import Swiper from 'swiper';
+
+import 'swiper/css';
+import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper styles
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
+const swiper = new Swiper('.mySwiper', {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination],
+    loop:true,
+    autoplay: {
+        delay: 3000,
+      },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+

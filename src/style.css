@@ -73,6 +73,8 @@
 @import "tailwindcss";
 
 
+
+
 @theme {
 
   /* font-family */
@@ -81,7 +83,6 @@
 
    /*  breakpoint  */
 
-   --breakpoint-sm-xl: 28rem;   /* 448px */
    --breakpoint-1xl: 90rem;   /* 1400px */
 
   /* color */
@@ -113,10 +114,10 @@
 
 @layer base{
   h1{
-    @apply text-5xl md:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] max-w-[28.313rem] mb-4
+    @apply text-5xl md:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] sm:max-w-[28.313rem] mb-4
   }
   h2{
-    @apply text-4.5xl font-extrabold leading-13
+    @apply text-3xl md:text-4xl lg:text-4.5xl font-extrabold leading-13
   }
   h4{
     @apply text-white text-base lg:text-2xl font-extrabold
@@ -130,7 +131,30 @@
   p{
     @apply text-base font-normal leading-6.5
   }
+  button{
+    @apply cursor-pointer
+  }
+  
 }
+
+  .swiper-slide{
+    @apply px-[1.375rem]
+  }
+
+  .swiper-button-prev{
+    @apply left-0!
+  }
+  .swiper-button-next{
+    @apply right-0!
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    @apply w-11! h-11!  bg-primary rounded-full
+  }
+  .swiper-button-prev:after, .swiper-button-next:after{
+    @apply text-white text-xl! font-extrabold
+  }
+
 
 @layer components{
   .btn{
@@ -148,14 +172,15 @@
   
 }
 
-@layer utilities{
-  .container {
-    @apply mx-auto px-3;
-    @media (width >= 90rem /* 1440px */) {
+@utility container{
+  @apply mx-auto px-3;
+  @media (width >= 90rem /* 1440px */) {
         max-width: var(--breakpoint-1xl) /* 1440px */;
         padding-inline: 4rem  /* 64px */; 
     }
-  }
 }
+
+
+
 
 

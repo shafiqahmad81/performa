@@ -15,127 +15,166 @@
 
   <!-- header section -->
 
-  <header class="bg-secondary relative flex items-center justify-between py-6 lg:py-8 px-4 xl:px-[7.5rem]">
-    <!-- Logo -->
-    <div class="w-[228px] cursor-pointer">
-      <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
-    </div>
+  <section class=" ">
 
-    <!-- Desktop Navigation -->
-    <nav class="hidden lg:flex space-x-6">
-      <a href="#" class="hover:text-gray-500">Membership</a>
-      <a href="#" class="hover:text-gray-500">Products</a>
-      <a href="#" class="hover:text-gray-500">Stories</a>
-      <a href="#" class="hover:text-gray-500">What’s CBD</a>
-      <a href="#" class="hover:text-gray-500">Mission</a>
-      <a href="#" class="hover:text-gray-500">Quality</a>
-      <a href="#" class="hover:text-gray-500">Blogs</a>
-    </nav>
-
-    <!-- Buttons -->
-    <div class="hidden lg:flex items-center space-x-4">
-      <button class="btn">Contact Us</button>
-      <button class="p-3.7 border border-primary/20 rounded-extra-lg">
-        <img src="src/assets/icon/shopping-bag.png" alt="Cart" class="h-6">
-      </button>
-    </div>
-
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="lg:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-    </button>
-
-    <!-- Mobile Menu (Hidden by default) -->
-    <div id="mobile-menu" class="hidden absolute top-0 left-0 bg-secondary right-0 z-40 h-screen p-6">
-      <button id="close-menu" class="hidden z-50 absolute top-6 right-4"><svg xmlns="http://www.w3.org/2000/svg"
-          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      <div class="flex items-center">
-        <img src="src/assets/icon/performa-logo.png" alt="Performa Logo" class="h-8">
-      </div>
-
-      <nav class=" flex flex-col items-center space-y-4 text-lg">
-        <a href="#" class="hover:text-gray-500">Membership</a>
-        <a href="#" class="hover:text-gray-500">Products</a>
-        <a href="#" class="hover:text-gray-500">Stories</a>
-        <a href="#" class="hover:text-gray-500">What’s CBD</a>
-        <a href="#" class="hover:text-gray-500">Mission</a>
-        <a href="#" class="hover:text-gray-500">Quality</a>
-        <a href="#" class="hover:text-gray-500">Blogs</a>
-      </nav>
-      <div class="flex justify-center">
-        <button class="btn">Contact Us</button>
-      </div>
-    </div>
-  </header>
+  </section>
 
   <!-- Hero Section -->
+
   <section class=" bg-secondary relative">
+    <div class="absolute top-8 left-0 right-0">
+      <header class="bg-secondary relative ">
+        <div class="container">
+          <div class="flex items-center justify-between xl:px-14">
+            <div class="flex items-center space-x-6 xl:space-x-8">
 
+              <!-- Logo -->
 
-    <div class="">
-      <div class="flex flex-col sm:flex-row items-center">
-        <div class="w-full sm:w-[47.570%]">
-          <img src="src/assets/img/hero-img.png" alt="Hero Image" class="w-full" />
+              <div class="w-48 md:w-[228px] cursor-pointer">
+                <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
+              </div>
+              <div class="hidden lg:block h-5 border-l border-primary/30"></div>
+
+              <!-- Desktop Navigation -->
+
+              <nav class="hidden lg:flex space-x-5 xl:space-x-9 text-sm font-normal">
+                <a data-nav="Membership" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Membership</a>
+                <a data-nav="Products" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Products</a>
+                <a data-nav="Stories" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Stories</a>
+                <a data-nav="What’s CBD" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">What’s
+                  CBD</a>
+                <a data-nav="Mission" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Mission</a>
+                <a data-nav="Quality" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Quality</a>
+                <a data-nav="Blogs" href="#"
+                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Blogs</a>
+              </nav>
+            </div>
+            <div class="hidden lg:flex items-center space-x-4">
+              <button class="btn">Contact Us</button>
+              <button class="p-3.7 border border-primary/20 rounded-extra-lg">
+                <img src="src/assets/icon/shopping-bag.png" alt="Cart" class="h-6">
+              </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden absolute -top-4 left-0 bg-secondary right-0 z-40 h-screen py-4 ">
+              <div class="container relative">
+                <button id="close-menu" class="hidden z-50 absolute top-2 right-3"><svg
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+
+                <div class="w-48 md:w-[228px] cursor-pointer">
+                  <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
+                </div>
+
+                <nav class=" flex flex-col items-center space-y-4 text-lg mt-5">
+                  <a href="#" class="hover:text-gray-500">Membership</a>
+                  <a href="#" class="hover:text-gray-500">Products</a>
+                  <a href="#" class="hover:text-gray-500">Stories</a>
+                  <a href="#" class="hover:text-gray-500">What’s CBD</a>
+                  <a href="#" class="hover:text-gray-500">Mission</a>
+                  <a href="#" class="hover:text-gray-500">Quality</a>
+                  <a href="#" class="hover:text-gray-500">Blogs</a>
+                </nav>
+                <div class="flex justify-center mt-6">
+                  <button class="btn">Contact Us</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
-        <div class="w-full sm:w-[calc(100%-47.570%)] pl-[6.667%] pr-4">
-          <h1 class="">Perfor Recover Repeat.</h1>
-          <p class="max-w-[31.5rem] opacity-60 text-xl">“Focused on maximizing your recovery so that you can be ready to
-            perfom at
-            your
-            peak.”
-          </p>
+      </header>
+    </div>
+    <div class="flex flex-col sm:flex-row items-center pt-8 xl:pt-0">
+      <div class="w-full sm:w-[47.570%]">
+        <img src="src/assets/img/hero-img.png" alt="Hero Image" class="w-full" />
+      </div>
+      <div class="w-full sm:w-[calc(100%-47.570%)] pl-[6.667%] pr-4 text-center sm:text-start">
+        <h1 class="mt-8 sm:mt-0">Perfor Recover Repeat.</h1>
+        <p class="max-w-[31.5rem] opacity-60 md:text-xl">“Focused on maximizing your recovery so that you can be ready
+          to
+          perfom at
+          your
+          peak.”
+        </p>
+      </div>
+    </div>
+
+    <div class="px-8 lg:px-16 pb-10 lg:pb-17 flex items-center justify-center gap-12 xl:gap-24 flex-wrap mt-17">
+      <div class=" hero-card-item">
+        <div class="max-w-[155px]">
+          <h6 class="">MEN’S HEALTH</h6>
+          <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+          <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
         </div>
       </div>
-
-      <div class="px-8 lg:px-16 pb-10 lg:pb-17 flex items-center justify-center gap-12 xl:gap-24 flex-wrap mt-17">
-        <div class=" hero-card-item">
-          <div class="max-w-[155px]">
-            <h6 class="">MEN’S HEALTH</h6>
-            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
-          </div>
-        </div>
-        <div class=" hero-card-item">
-          <div class="max-w-[155px]">
-            <h6 class="">MEN’S HEALTH</h6>
-            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
-          </div>
-        </div>
-        <div class=" hero-card-item">
-          <div class="max-w-[155px]">
-            <h6 class="">MEN’S HEALTH</h6>
-            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
-          </div>
-        </div>
-        <div class=" hero-card-item">
-          <div class="max-w-[155px]">
-            <h6 class="">MEN’S HEALTH</h6>
-            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
-          </div>
-        </div>
-        <div class="text-center">
-          <div class="max-w-[155px]">
-            <h6 class="">MEN’S HEALTH</h6>
-            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
-            <button class="flex items-center mt-4 mx-auto">Read more <span class="ml-2">→</span></button>
-          </div>
+      <div class=" hero-card-item">
+        <div class="max-w-[155px]">
+          <h6 class="">MEN’S HEALTH</h6>
+          <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+          <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg></button>
         </div>
       </div>
-
+      <div class=" hero-card-item">
+        <div class="max-w-[155px]">
+          <h6 class="">MEN’S HEALTH</h6>
+          <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+          <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg></button>
+        </div>
+      </div>
+      <div class=" hero-card-item">
+        <div class="max-w-[155px]">
+          <h6 class="">MEN’S HEALTH</h6>
+          <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+          <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg></button>
+        </div>
+      </div>
+      <div class="text-center">
+        <div class="max-w-[155px]">
+          <h6 class="">MEN’S HEALTH</h6>
+          <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+          <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg></button>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- How We've Helped -->
+
   <section class="container text-center py-12">
     <div class="md:px-5 lg:px-10 xl:px-24">
       <h2 class="text-3xl font-bold mb-14">How We've Helped</h2>
@@ -181,6 +220,7 @@
   </section>
 
   <!-- Benefits Section -->
+
   <section class="py-12 bg-secondary">
     <div class="container">
       <div
@@ -198,15 +238,15 @@
             </h4>
           </div>
           <div class=" w-full sm:max-w-[377px] relative">
-            <img src="src/assets/img/benefits-img-1.png" />
+            <img src="src/assets/img/benefits-img-2.png" />
             <h4 class="h4">Sports</h4>
           </div>
           <div class=" w-full sm:max-w-[377px] relative">
-            <img src="src/assets/img/benefits-img-1.png" />
+            <img src="src/assets/img/benefits-img-3.png" />
             <h4 class="h4 text-sm lg:text-xl max-w-[183px]">Control your fears and quell your anxiety to excel</h4>
           </div>
           <div class=" w-full sm:max-w-[377px] relative">
-            <img src="src/assets/img/benefits-img-1.png" />
+            <img src="src/assets/img/benefits-img-4.png" />
             <h4 class="h4 text-sm lg:text-xl max-w-[160px]">Enchance your recovery with better sleep</h4>
           </div>
         </div>
@@ -268,11 +308,22 @@
   <!-- Tinctures section -->
 
   <section class="container mt-12 md:mt-16 lg:mt-[7.5rem]">
-    <div class="sm:pl-10 sm:pr-10 lg:pr-[9.313rem] flex flex-col md:flex-row gap-7 lg:gap-14">
-      <div class="h-auto">
-        <img src="src/assets/img/tinctures-img.png" alt="perfoma">
+    <div class="sm:pl-10 sm:pr-10 lg:pr-[9.313rem] flex flex-col md:flex-row ">
+      <div class="w-full md:w-[55.071%]">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="src/assets/img/tinctures-img.png" alt="Tinctures">
+            </div>
+            <div class="swiper-slide"><img src="src/assets/img/tinctures-img.png" alt="Tinctures"></div>
+            <div class="swiper-slide"><img src="src/assets/img/tinctures-img.png" alt="Tinctures"></div>
+            <div class="swiper-slide"><img src="src/assets/img/tinctures-img.png" alt="Tinctures"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
-      <div>
+      <div class="w-full md:w-[calc(100%-55.071%)] md:pl-14 mt-5 md:mt-0">
         <h2>Tinctures</h2>
         <p class="pt-7 pb-6 opacity-60 text-xl">Choose the one that fits you best</p>
         <div class="font-sans flex gap-6">
@@ -298,7 +349,7 @@
 
   <!-- Get started on your journey -->
 
-  <section class="max-w-[90rem] mx-auto my-10 md:my-16 lg:my-[7.5rem] lg:pr-16 xl:pr-32">
+  <section class="container my-10 md:my-16 lg:my-[7.5rem] ">
     <div class="flex flex-col lg:flex-row gap-12 xl:gap-24">
       <div class="flex justify-center px-6 md:px-0 gap-5.5">
         <div class="w-80 xl:w-[24.625rem]">
@@ -309,7 +360,7 @@
         </div>
 
       </div>
-      <div class="px-6 lg:px-0">
+      <div class="">
         <h2>Get started on your journey</h2>
         <p class="pt-7 pb-3.5 opacity-80 font-bold text-lg">Started kit</p>
         <p class="opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget vulputate convallis
@@ -385,7 +436,7 @@
           <form class="mt-8 relative">
             <input type="email" placeholder="Your email" class="pl-6 pr-40 py-6.5 w-full bg-white/10 rounded-xl" />
             <button
-              class="help-input text-primary font-bold absolute top-1/2 -translate-y-1/2 right-2 cursor-pointer sm-xl:px-2">Stay
+              class="help-input text-primary font-bold absolute top-1/2 -translate-y-1/2 right-2 cursor-pointer sm:px-2">Stay
               in
               Touch</button>
           </form>
@@ -430,8 +481,7 @@
         </div>
       </div>
 
-      <div
-        class="flex flex-col sm-xl:flex-row items-center justify-between lg:pl-10 lg:pr-14 mt-12 md:mt-17 pb-14 gap-3">
+      <div class="flex flex-col sm:flex-row items-center justify-between lg:pl-10 lg:pr-14 mt-12 md:mt-17 pb-14 gap-3">
         <nav>
           <a href="#" class="mr-4">Terms & Conditions</a>
           <a href="#">Privacy Policy</a>
