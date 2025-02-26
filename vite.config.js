@@ -7,7 +7,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        about: path.resolve(__dirname, 'whats-cbd.html'),
+        whatscbd: path.resolve(__dirname, 'whats-cbd.html'),
+        testimonial: path.resolve(__dirname, 'testimonial.html'),
       },
     },
   },
