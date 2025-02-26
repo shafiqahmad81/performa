@@ -93,6 +93,7 @@
   /* fonts size */
 
   --text-extra-xs: 0.813rem;  /* 13px */
+  --text-3.5xl: 2.125rem; /* 34px */
   --text-4.5xl: 2.75rem;  /* 44px */
 
   /* --border radius */
@@ -108,16 +109,23 @@
   --spacing-13: 3.3rem; /* 52px */
   --spacing-17: 4.5rem; /* 72px */
 
+  /* blur */
+
+  --blur-2xs: 14px;
+
 
 }
 
 
 @layer base{
   h1{
-    @apply text-5xl md:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] sm:max-w-[28.313rem] mb-4
+    @apply text-5xl lg:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] sm:max-w-[28.313rem] mb-4
   }
   h2{
     @apply text-3xl md:text-4xl lg:text-4.5xl font-extrabold leading-13
+  }
+  h3{
+    @apply text-3.5xl font-bold leading-11 
   }
   h4{
     @apply text-white text-base lg:text-2xl font-extrabold
