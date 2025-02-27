@@ -89,7 +89,7 @@
 
   --color-primary: #313131;
   --color-secondary: #F9F9F9;
-
+  
   /* fonts size */
 
   --text-extra-xs: 0.813rem;  /* 13px */
@@ -120,7 +120,7 @@
 
 @layer base{
   h1{
-    @apply text-5xl lg:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] sm:max-w-[28.313rem] mb-4
+    @apply text-5xl lg:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] mb-4
   }
   h2{
     @apply text-3xl md:text-4xl lg:text-4.5xl font-extrabold leading-13
