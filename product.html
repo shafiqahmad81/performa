@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performa</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+  <div class="text-center bg-white py-6 text-xs text-primary">
+    <span>FREE SHIPPING ON EVERY ORDER</span>
+  </div>
+
+  <!-- header section -->
+
+  <header class="bg-white relative ">
+    <div class="container">
+      <div class="flex items-center justify-between xl:px-14">
+        <div class="flex items-center space-x-6 xl:space-x-8">
+
+          <!-- Logo -->
+
+          <a href="index.html" class="w-32 sm:w-[228px]">
+            <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
+          </a>
+          <div class="hidden lg:block h-5 border-l border-primary/30"></div>
+
+          <!-- Desktop Navigation -->
+
+          <nav class="hidden lg:flex space-x-5 xl:space-x-9 text-sm font-normal">
+            <a data-nav="Membership" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Membership</a>
+            <a data-nav="Products" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Products</a>
+            <a data-nav="Stories" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Stories</a>
+            <a data-nav="What’s CBD" href="whats-cbd.html"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">What’s
+              CBD</a>
+            <a data-nav="Mission" href="testimonial.html"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Mission</a>
+            <a data-nav="Quality" href="quality.html"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Quality</a>
+            <a data-nav="Blogs" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Blogs</a>
+          </nav>
+        </div>
+        <div class="hidden lg:flex items-center space-x-4">
+          <button class="btn">Contact Us</button>
+          <button class="p-3.7 border border-primary/20 rounded-extra-lg">
+            <img src="src/assets/icon/shopping-bag.png" alt="Cart" class="h-6">
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden absolute -top-4 left-0 bg-secondary right-0 z-40 h-screen py-4 ">
+          <div class="container relative">
+            <button id="close-menu" class="hidden z-50 absolute top-0 right-3"><svg xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <a href="#" class="w-32 sm:w-[228px] cursor-pointer block">
+              <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
+            </a>
+
+            <nav class=" flex flex-col items-center space-y-4 text-lg mt-5">
+              <a href="#" class="hover:text-gray-500">Membership</a>
+              <a href="#" class="hover:text-gray-500">Products</a>
+              <a href="#" class="hover:text-gray-500">Stories</a>
+              <a href="whats-cbd.html" class="hover:text-gray-500">What’s CBD</a>
+              <a href="testimonial.html" class="hover:text-gray-500">Mission</a>
+              <a href="quality.html" class="hover:text-gray-500">Quality</a>
+              <a href="#" class="hover:text-gray-500">Blogs</a>
+            </nav>
+            <div class="flex justify-center mt-6">
+              <button class="btn">Contact Us</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product section -->
+
+  <section class="container mt-12 md:mt-14 lg:mt-17">
+    <div class="lg:pr-[9.313rem] flex flex-col md:flex-row ">
+      <div class="w-full md:w-[55.071%]">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="src/assets/img/product.jpg" alt="product">
+            </div>
+            <div class="swiper-slide"><img src="src/assets/img/product.jpg" alt="product"></div>
+            <div class="swiper-slide"><img src="src/assets/img/product.jpg" alt="product"></div>
+            <div class="swiper-slide"><img src="src/assets/img/product.jpg" alt="product"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="w-full md:w-[calc(100%-55.071%)] md:pl-14 mt-5 md:mt-0">
+        <div class="flex ">
+          <h2 class="font-sans ">Product 1</h2>
+
+          <div class="mt-1.5">
+            <span class="text-xs font-bold text-white px-1.5 py-1 bg-[#6FCF97] rounded-sm ml-5">Best
+              Seller</span>
+          </div>
+        </div>
+
+        <p class="pt-6 pb-4 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At in
+          parturient massa
+          lorem malesuada eu. Massa, bibendum aliquam dignissim elit scelerisque dolor </p>
+        <p class=" opacity-60 mb-6">consectetur adipiscing elit. At in parturient massa lorem malesuada eu.</p>
+        <a href="#"
+          class="underline underline-offset-8 decoration-2 decoration-primary/80 font-bold opacity-80 flex items-center gap-2.5">
+          <span class="text-sm leading-4">Product Info</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" fill="none">
+            <path stroke="#313131" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+              stroke-width="1.8" d="m1.455 8.96 3.26-3.26a.993.993 0 0 0 0-1.4l-3.26-3.26" />
+          </svg>
+        </a>
+        <div class="font-sans flex items-center gap-5 mt-9">
+          <button
+            class="px-4.9 pt-3 pb-3.5 border border-primary/10 rounded-extra-lg text-xl font-bold text-left w-28 bg-secondary"><span
+              class="text-sm opacity-80 font-normal">450 MG </span>$45</button>
+          <div class="w-0.5 h-10 bg-primary/10 "></div>
+          <button
+            class="px-3 pt-3 pb-3.5 border border-primary/10 rounded-extra-lg text-xl font-bold text-left w-28 "><span
+              class="text-sm opacity-80 font-normal">900 MG </span>$59.99</button>
+        </div>
+
+        <div class="flex items-center gap-4 pt-8">
+          <a href="#" class="btn bg-white text-primary border border-primary/10">How Subscription works</a>
+          <button class="btn bg-primary text-white">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We've Helped -->
+
+  <section class="container text-center pt-12">
+    <div class="md:px-5 lg:px-10 xl:px-24">
+      <div class="text-center max-w-[33rem] mx-auto">
+        <h3 class="font-extrabold lg:leading-12">Our Customer Happy Story</h3>
+        <p class="pt-4 pb-12 opacity-60 max-w-[32.5rem] md:text-xl md:leading-7">Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Volutpat nisi tortor
+          auctor maecenas pretium.</p>
+      </div>
+      <div class="w-full relative">
+        <img src="src/assets/img/product-customer-story.jpg" alt="perfoma-product">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><img class="w-12"
+            src="src/assets/icon/play.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Usage Guidence section -->
+
+  <section class="container text-center py-12 md:py-24 lg:py-30">
+    <div class="flex items-center flex-col md:flex-row text-start xl:pl-1 xl:pr-16 ">
+      <div class="w-full md:w-[59.836%]">
+        <img src="src/assets/img/usage-img.png" alt="usage-img">
+      </div>
+      <div class="w-full md:w-[calc(100%-59.836%)] md:pl-10 lg:pl-20 mt-6 md:mt-0">
+        <h3 class="max-w-[17.063rem]">Usage Guidence</h3>
+        <p class="max-w-[27.375rem] opacity-60 my-4 lg:text-xl lg:leading-7">Lorem ipsum dolor sit amet,
+          consectetur
+          adipiscing elit. Enim elementum mauris sodales vitae amet</p>
+        <p class="max-w-[27.375rem] opacity-60 lg:text-xl lg:leading-7">Lorem ipsum dolor sit amet, consectetur
+          adipiscing
+          elit.
+        </p>
+        <button class="btn mt-9">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Benefits Section -->
+
+  <section class="pt-12 bg-primary/5">
+    <div class="container">
+      <div
+        class="md:pl-10 lg:pl-20 xl:pl-[152px] md:pr-8 lg:pr-16 xl:pr-36 flex flex-col md:flex-row items-center justify-between gap-6 lg:gap-12 xl:gap-24">
+        <div class="text-center sm:text-left w-full sm:max-w-[200px]">
+          <h2 class="">Benefits</h2>
+          <p class="opacity-80 py-4">How we help you stay on top of your game</p>
+          <p class="opacity-80 font-bold">You’ve earned this rest</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:gap-6">
+          <div class=" w-full sm:max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-1.png" />
+            <h4 class="h4">Lesse your soreness and pain
+            </h4>
+          </div>
+          <div class=" w-full sm:max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-2.png" />
+            <h4 class="h4">Sports</h4>
+          </div>
+          <div class=" w-full sm:max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-3.png" />
+            <h4 class="h4 text-sm lg:text-xl max-w-[183px]">Control your fears and quell your anxiety to excel</h4>
+          </div>
+          <div class=" w-full sm:max-w-[377px] relative">
+            <img src="src/assets/img/benefits-img-4.png" />
+            <h4 class="h4 text-sm lg:text-xl max-w-[160px]">Enchance your recovery with better sleep</h4>
+          </div>
+        </div>
+      </div>
+      <!-- card -->
+
+      <div
+        class=" pt-10 md:pt-14 xl:pt-24 px-8 lg:px-16 pb-10 lg:pb-17 flex items-center justify-center gap-12 xl:gap-24 flex-wrap">
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg></button>
+          </div>
+        </div>
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg></button>
+          </div>
+        </div>
+        <div class=" hero-card-item">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg></button>
+          </div>
+        </div>
+        <div class="text-center">
+          <div class="max-w-[155px]">
+            <h6 class="">MEN’S HEALTH</h6>
+            <p class="text-sm leading-5.5 opacity-60 mt-2">Lorem ipsum dolor sit amet, consectetur </p>
+            <button class="flex items-center mt-4 mx-auto">Read more <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 ml-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Need Help Section -->
+
+  <section class="bg-primary/5 bg-cover bg-no-repeat bg-left pt-7 md:pt-14 pb-24"
+    style="background-image: url(src/assets/img/product-reviews.png);">
+    <div class="container ">
+      <div class="md:pl-16 flex flex-col md:flex-row justify-between items-center">
+        <div class="w-full md:w-[calc(100%-51.127%)] md:pr-[7.729%]">
+          <h2 class="h1">Write A Reviews</h2>
+          <p class="opacity-60 lg:text-xl lg:leading-7 max-w-[326px]">Check FAQ below, if you have another question ,
+            Just ask</p>
+          <div class="flex flex-col space-y-4 mb-8 mt-11">
+            <div class="text-center inline-flex gap-3.5">
+              <img class="w-6 " src="src/assets/icon/sms-black.png" alt="message">
+              <p class="">text@example.com</p>
+            </div>
+            <div class="text-center inline-flex gap-3.5">
+              <img class="w-6" src="src/assets/icon/call-black.png" alt="call">
+              <p class=" font-sans">+62 5261 5261 6323</p>
+            </div>
+            <div class="text-center inline-flex gap-3.5">
+              <img class="w-6" src="src/assets/icon/location.png" alt="location">
+              <p class=" font-sans">+62 5261 5261 6323</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-[51.127%] mx-auto px-5 md:px-12 xl:px-[6.625rem] pt-13 pb-10 bg-white/90 backdrop-blur-[14px] text-center">
+          <p class="mt-4 opacity-80 font-normal max-w-[445px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Iaculis odio dictum amet in. Mi molestie
+          </p>
+          <form class="mt-9 flex flex-col gap-4">
+            <div class="flex flex-col lg:flex-row gap-4">
+              <input type="text" placeholder="First Name" class="w-full lg:w-1/2 help-input bg-primary/5" />
+              <input type="text" placeholder="Last Name" class="w-full lg:w-1/2 help-input bg-primary/5" />
+            </div>
+            <input type="email" placeholder="Email" class="help-input bg-primary/5" />
+            <textarea name="" id="" placeholder="Reviews" class="help-input bg-primary/5"></textarea>
+            <div class="mt-8">
+              <button class="btn">Post Review</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white/60 text-base leading-4.9 font-normal">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 lg:gap-6 lg:px-10 pt-20">
+        <div class="w-full sm:max-w-[309px]">
+          <a href="index.html" class="w-32 sm:w-[228px] block">
+            <img src="src/assets/icon/performa-logo-white.png" alt="Perforaa Logo">
+          </a>
+          <h5 class="text-lg text-white mt-9 mb-5">Contact Us</h5>
+          <a href="#" class="font-sans flex items-center gap-4 text-white/60 pb-2.5">
+            <img class="w-4 " src="src/assets/icon/call.png" alt="call">
+            <span>+62 875 325 325</span>
+          </a>
+          <a href="#" class="font-sans flex items-center gap-4 text-white/60">
+            <img class="w-4 " src="src/assets/icon/sms.png" alt="sms">
+            <span>help@performa</span>
+          </a>
+          <form class="mt-8 relative">
+            <input type="email" placeholder="Your email" class="pl-6 pr-40 py-6.5 w-full bg-white/10 rounded-xl" />
+            <button
+              class="help-input text-primary font-bold absolute top-1/2 -translate-y-1/2 right-2 cursor-pointer sm:px-2">Stay
+              in
+              Touch</button>
+          </form>
+        </div>
+        <div class="flex justify-between flex-wrap gap-10">
+          <div class="flex flex-col space-y-7">
+            <a href="#">Membership</a>
+            <a href="#">Products</a>
+            <a href="#">Stories</a>
+            <a href="whats-cbd.html">What’s CBD?</a>
+          </div>
+          <div class="flex flex-col space-y-7">
+            <a href="testimonial.html">Mission</a>
+            <a href="#">Quality</a>
+            <a href="help.html">Help</a>
+            <a href="#">Referral</a>
+          </div>
+          <div class="mx-auto lg:mx-0">
+            <h6 class="text-white/60 leading-4.9 font-normal">Payment Method</h6>
+            <div class="grid grid-cols-3 gap-2.5 mt-6.5">
+              <a href="#"><img class="w-11" src="src/assets/img/visa.png" alt="visa"></a>
+              <a href="#"><img class="w-11" src="src/assets/img/gpay.png" alt="visa"></a>
+              <a href="#"><img class="w-11" src="src/assets/img/mastercard.png" alt="visa"></a>
+              <a href="#"><img class="w-11" src="src/assets/img/applepay.png" alt="visa"></a>
+              <a href="#"><img class="w-11" src="src/assets/img/amazon.png" alt="visa"></a>
+              <a href="#"><img class="w-11" src="src/assets/img/shoppay.png" alt="visa"></a>
+            </div>
+            <div class="pr-5.5 flex items-center justify-between mt-11 mb-8">
+              <a href="#">
+                <img class="h-5.5" src="src/assets/icon/facebook.png" alt="facebook">
+              </a>
+              <a href="#">
+                <img class="h-5.5" src="src/assets/icon/twitter.png" alt="twitter">
+              </a>
+              <a href="#">
+                <img class="h-5.5" src="src/assets/icon/instagram.png" alt="instagram">
+              </a>
+            </div>
+            <h6 class="text-[15px] leading-4.9 font-bold text-white">FDA DISCLAIMER</h6>
+            <h6 class="text-[15px] leading-4.9 font-bold text-white/60 mt-2.5">Do not track</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between lg:pl-10 lg:pr-14 mt-12 md:mt-17 pb-14 gap-3">
+        <nav>
+          <a href="#" class="mr-4">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </nav>
+        <p class="font-sans">© Performa 2021</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body class="font-CocoSharp min-w-80">
+<body>
   <div class="text-center bg-white py-6 text-xs text-primary">
     <span>FREE SHIPPING ON EVERY ORDER</span>
   </div>
@@ -27,9 +27,9 @@
 
               <!-- Logo -->
 
-              <div class="w-48 md:w-[228px] cursor-pointer">
+              <a href="#" class="w-32 sm:w-[228px]">
                 <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
-              </div>
+              </a>
               <div class="hidden lg:block h-5 border-l border-primary/30"></div>
 
               <!-- Desktop Navigation -->
@@ -37,7 +37,7 @@
               <nav class="hidden lg:flex space-x-5 xl:space-x-9 text-sm font-normal">
                 <a data-nav="Membership" href="#"
                   class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Membership</a>
-                <a data-nav="Products" href="#"
+                <a data-nav="Products" href="pnpm-lock.yaml"
                   class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Products</a>
                 <a data-nav="Stories" href="#"
                   class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Stories</a>
@@ -70,20 +70,20 @@
             <!-- Mobile Menu (Hidden by default) -->
             <div id="mobile-menu" class="hidden absolute -top-4 left-0 bg-secondary right-0 z-40 h-screen py-4 ">
               <div class="container relative">
-                <button id="close-menu" class="hidden z-50 absolute top-2 right-3"><svg
+                <button id="close-menu" class="hidden z-50 absolute top-0 right-3"><svg
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg>
                 </button>
 
-                <div class="w-48 md:w-[228px] cursor-pointer">
+                <a href="#" class="w-32 sm:w-[228px] block">
                   <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
-                </div>
+                </a>
 
                 <nav class=" flex flex-col items-center space-y-4 text-lg mt-5">
                   <a href="#" class="hover:text-gray-500">Membership</a>
-                  <a href="#" class="hover:text-gray-500">Products</a>
+                  <a href="product.html" class="hover:text-gray-500">Products</a>
                   <a href="#" class="hover:text-gray-500">Stories</a>
                   <a href="whats-cbd.html" class="hover:text-gray-500">What’s CBD</a>
                   <a href="testimonial.html" class="hover:text-gray-500">Mission</a>
@@ -100,18 +100,21 @@
         </div>
       </header>
     </div>
-    <div class="flex flex-col sm:flex-row items-center pt-8 xl:pt-0">
-      <div class="w-full sm:w-[47.570%]">
-        <img src="src/assets/img/hero-img.png" alt="Hero Image" class="w-full" />
-      </div>
-      <div class="w-full sm:w-[calc(100%-47.570%)] pl-[6.667%] pr-4 text-center sm:text-start">
-        <h1 class="mt-8 sm:mt-0 sm:max-w-[28.313rem]">Perfor Recover Repeat.</h1>
-        <p class="max-w-[31.5rem] opacity-60 md:text-xl">“Focused on maximizing your recovery so that you can be ready
-          to
-          perfom at
-          your
-          peak.”
-        </p>
+    <div class="container">
+
+      <div class="flex flex-col sm:flex-row items-center pt-8 xl:pt-0">
+        <div class="w-full sm:w-[47.570%]">
+          <img src="src/assets/img/hero-img.png" alt="Hero Image" class="w-full" />
+        </div>
+        <div class="w-full sm:w-[calc(100%-47.570%)] pl-[6.667%] pr-4 text-center sm:text-start">
+          <h1 class="mt-8 sm:mt-0 sm:max-w-[28.313rem]">Perfor Recover Repeat.</h1>
+          <p class="max-w-[31.5rem] opacity-60 md:text-xl">“Focused on maximizing your recovery so that you can be ready
+            to
+            perfom at
+            your
+            peak.”
+          </p>
+        </div>
       </div>
     </div>
 
@@ -418,7 +421,7 @@
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 lg:gap-6 lg:px-10 pt-20">
         <div class="w-full sm:max-w-[309px]">
-          <a href="index.html" class="w-[228px] cursor-pointer">
+          <a href="index.html" class="w-32 sm:w-[228px] block">
             <img src="src/assets/icon/performa-logo-white.png" alt="Performa Logo">
           </a>
           <h5 class="text-lg text-white mt-9 mb-5">Contact Us</h5>
@@ -441,13 +444,13 @@
         <div class="flex justify-between flex-wrap gap-10">
           <div class="flex flex-col space-y-7">
             <a href="#">Membership</a>
-            <a href="#">Products</a>
+            <a href="product.html">Products</a>
             <a href="#">Stories</a>
             <a href="whats-cbd.html">What’s CBD?</a>
           </div>
           <div class="flex flex-col space-y-7">
             <a href="testimonial.html">Mission</a>
-            <a href="#">Quality</a>
+            <a href="quality.html">Quality</a>
             <a href="help.html">Help</a>
             <a href="#">Referral</a>
           </div>

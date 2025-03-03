@@ -94,6 +94,7 @@
 
   --text-extra-xs: 0.813rem;  /* 13px */
   --text-3.5xl: 2.125rem; /* 34px */
+  --text-4.1xl: 2.375rem; /* 38px */
   --text-4.5xl: 2.75rem;  /* 44px */
 
   /* --border radius */
@@ -117,16 +118,20 @@
 
 }
 
+body{
+  @apply text-primary font-CocoSharp min-w-80
+}
+
 
 @layer base{
   h1{
     @apply text-5xl lg:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] mb-4
   }
   h2{
-    @apply text-3xl md:text-4xl lg:text-4.5xl font-extrabold leading-13
+    @apply text-3xl md:text-4xl lg:text-4.5xl font-extrabold lg:leading-13
   }
   h3{
-    @apply text-3.5xl font-bold leading-11 
+    @apply text-2xl md:text-3xl lg:text-3.5xl font-bold lg:leading-11 
   }
   h4{
     @apply text-white text-base lg:text-2xl font-extrabold
@@ -172,11 +177,17 @@
   .hero-card-item{
     @apply text-center relative md:before:absolute before:top-5 before:bottom-6 before:-right-6 xl:before:-right-12 before:w-px before:bg-primary/20
   }
+  .h1{
+    @apply text-5xl lg:text-7xl xl:text-[6.236rem] font-extrabold xl:leading-[6.644rem] mb-4
+  }
   .h4{
     @apply absolute top-1/2 left-4 lg:left-9 max-w-32 -translate-y-1/2
   }
   .help-input{
     @apply bg-white/95 px-5 py-4.9 rounded-extra-lg placeholder:text-primary/40 focus:outline-0
+  }
+  .accordian-btn{
+    @apply text-xl font-bold text-black/60
   }
   
 }

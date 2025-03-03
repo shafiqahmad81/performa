@@ -38,3 +38,41 @@ const swiper = new Swiper('.mySwiper', {
     },
   });
 
+  // JavaScript to toggle accordion content
+//   document.querySelectorAll('.accordion-title').forEach(button => {
+//     button.addEventListener('click', () => {
+//         const content = button.nextElementSibling;
+//         content.classList.toggle('hidden');
+//     });
+// });
+
+
+// document.querySelectorAll('.accordion-toggle').forEach(button => {
+//   button.addEventListener('click', () => {
+//       const content = button.nextElementSibling;
+//       const icon = button.querySelector(".icon use");
+
+//       if (content.classList.contains("hidden")) {
+//           document.querySelectorAll(".accordion-content").forEach(item => item.classList.add("hidden"));
+//           document.querySelectorAll(".icon use").forEach(icon => icon.setAttribute("href", "#icon-down"));
+
+//           content.classList.remove("hidden");
+//           icon.setAttribute("href", "#icon-up");
+//       } else {
+//           content.classList.add("hidden");
+//           icon.setAttribute("href", "#icon-down");
+//       }
+//   });
+// });
+
+
+ // JavaScript to toggle accordion content and rotate icon
+ document.querySelectorAll('.accordion-title').forEach(button => {
+  button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('svg');
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+  });
+});
+

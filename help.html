@@ -8,235 +8,657 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body class="font-CocoSharp min-w-80">
+<body>
   <div class="text-center bg-white py-6 text-xs text-primary">
     <span>FREE SHIPPING ON EVERY ORDER</span>
   </div>
 
   <!-- Hero Section -->
 
-  <section class=" bg-secondary relative pt-16">
-    <div class="absolute top-8 left-0 right-0">
 
-      <!-- header section -->
+  <!-- header section -->
 
-      <header class="bg-secondary relative ">
-        <div class="container">
-          <div class="flex items-center justify-between xl:px-14">
-            <div class="flex items-center space-x-6 xl:space-x-8">
+  <header class="bg-white py-4 lg:py-7 relative">
+    <div class="container">
+      <div class="flex items-center justify-between xl:px-14">
+        <div class="flex items-center space-x-6 xl:space-x-8">
 
-              <!-- Logo -->
-              <a href="index.html" class="w-48 md:w-[228px] cursor-pointer">
-                <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
-              </a>
+          <!-- Logo -->
+          <a href="index.html" class="w-32 sm:w-[228px]">
+            <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
+          </a>
 
-              <div class="hidden lg:block h-5 border-l border-primary/30"></div>
+          <div class="hidden lg:block h-5 border-l border-primary/30"></div>
 
-              <!-- Desktop Navigation -->
+          <!-- Desktop Navigation -->
 
-              <nav class="hidden lg:flex space-x-5 xl:space-x-9 text-sm font-normal">
-                <a data-nav="Membership" href="#"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Membership</a>
-                <a data-nav="Products" href="#"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Products</a>
-                <a data-nav="Stories" href="#"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Stories</a>
-                <a data-nav="What’s CBD" href="whats-cbd.html"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">What’s
-                  CBD</a>
-                <a data-nav="Mission" href="testimonial.html"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Mission</a>
-                <a data-nav="Quality" href="#"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Quality</a>
-                <a data-nav="Blogs" href="#"
-                  class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Blogs</a>
-              </nav>
-            </div>
-            <div class="hidden lg:flex items-center space-x-4">
-              <button class="btn">Contact Us</button>
-              <button class="p-3.7 border border-primary/20 rounded-extra-lg">
-                <img src="src/assets/icon/shopping-bag.png" alt="Cart" class="h-6">
-              </button>
-            </div>
+          <nav class="hidden lg:flex space-x-5 xl:space-x-9 text-sm font-normal">
+            <a data-nav="Membership" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Membership</a>
+            <a data-nav="Products" href="product.html"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Products</a>
+            <a data-nav="Stories" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Stories</a>
+            <a data-nav="What’s CBD" href="whats-cbd.html"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">What’s
+              CBD</a>
+            <a data-nav="Mission" href="testimonial.html"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Mission</a>
+            <a data-nav="Quality" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Quality</a>
+            <a data-nav="Blogs" href="#"
+              class="inline-block hover:font-semibold after:block after:content-[attr(data-nav)] after:font-semibold after:h-0 after:overflow-hidden after:invisible">Blogs</a>
+          </nav>
+        </div>
+        <div class="hidden lg:flex items-center space-x-4">
+          <button class="btn">Contact Us</button>
+          <button class="p-3.7 border border-primary/20 rounded-extra-lg">
+            <img src="src/assets/icon/shopping-bag.png" alt="Cart" class="h-6">
+          </button>
+        </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="menu-btn" class="lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden absolute top-0 left-0 bg-secondary right-0 z-40 h-screen py-4 ">
+          <div class="container relative">
+            <button id="close-menu" class="hidden z-50 absolute top-0 right-3"><svg xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
               </svg>
             </button>
 
-            <!-- Mobile Menu (Hidden by default) -->
-            <div id="mobile-menu" class="hidden absolute -top-4 left-0 bg-secondary right-0 z-40 h-screen py-4 ">
-              <div class="container relative">
-                <button id="close-menu" class="hidden z-50 absolute top-2 right-3"><svg
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg>
-                </button>
+            <a class="w-32 sm:w-[228px] block" href="index.html">
+              <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
+            </a>
 
-                <a class="w-48 md:w-[228px] block" href="index.html">
-                  <img src="src/assets/icon/performa-logo.png" alt="Performa Logo">
-                </a>
-
-                <nav class=" flex flex-col items-center space-y-4 text-lg mt-5">
-                  <a href="#" class="hover:text-gray-500">Membership</a>
-                  <a href="#" class="hover:text-gray-500">Products</a>
-                  <a href="#" class="hover:text-gray-500">Stories</a>
-                  <a href="whats-cbd.html" class="hover:text-gray-500">What’s CBD</a>
-                  <a href="testimonial.html" class="hover:text-gray-500">Mission</a>
-                  <a href="#" class="hover:text-gray-500">Quality</a>
-                  <a href="#" class="hover:text-gray-500">Blogs</a>
-                </nav>
-                <div class="flex justify-center mt-6">
-                  <button class="btn">Contact Us</button>
-                </div>
-              </div>
-
+            <nav class=" flex flex-col items-center space-y-4 text-lg mt-5">
+              <a href="#" class="hover:text-gray-500">Membership</a>
+              <a href="product.html" class="hover:text-gray-500">Products</a>
+              <a href="#" class="hover:text-gray-500">Stories</a>
+              <a href="whats-cbd.html" class="hover:text-gray-500">What’s CBD</a>
+              <a href="testimonial.html" class="hover:text-gray-500">Mission</a>
+              <a href="#" class="hover:text-gray-500">Quality</a>
+              <a href="#" class="hover:text-gray-500">Blogs</a>
+            </nav>
+            <div class="flex justify-center mt-6">
+              <button class="btn">Contact Us</button>
             </div>
           </div>
-        </div>
-      </header>
-    </div>
-    <div class="container sm:pr-0 flex flex-col sm:flex-row items-center">
-      <div class="w-full sm:w-[calc(100%-65.556%)] xl:pl-14 text-center sm:text-start">
-        <div class=" sm:w-80 lg:w-[39.688rem] ">
-          <h1 class="mt-8 sm:mt-0">High Quality Product</h1>
-          <p class="sm:max-w-[29.313rem] opacity-60 md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Enim
-            elementum mauris sodales vitae amet
-          </p>
-        </div>
-      </div>
-      <div class="w-full sm:w-[65.556%]">
-        <img src="src/assets/img/quality-hero.png" alt="Hero-Image" class="w-full" />
-      </div>
-    </div>
 
-  </section>
-
-  <!-- How it works -->
-
-  <section class="container text-center py-12 md:py-16 lg:py-24">
-    <div class="text-center">
-      <img class="w-17 mx-auto mb-8" src="src/assets/img/flag-usa.png" alt="flag-usa">
-      <h3 class="font-extrabold">How it works</h3>
-      <p class="text-xl opacity-60 mt-4 max-w-[526px] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Enim
-        elementum mauris
-        sodales vitae amet</p>
-    </div>
-  </section>
-
-  <!-- Our Product -->
-
-  <section class="bg-[#F8F8F8] bg-no-repeat bg-contain bg-right-bottom pt-52 lg:pt-0"
-    style="background-image: url(src/assets/img/quality-2.png);">
-    <div class="max-w-[41.75rem] -mt-52 lg:mt-0">
-      <img src="src/assets/img/quality-1.png" alt="img">
-    </div>
-    <div class="container ">
-      <div class=" pt-0 lg:-mt-20 xl:-mt-24 lg:pl-30 xl:pl-60 pb-24">
-        <div class="w-20 h-20 flex items-center justify-center bg-primary/10 rounded-full mb-10 relative z-10">
-          <img class="w-11" src="src/assets/icon/safe-icon.png" alt="safe-icon">
-        </div>
-        <h3 class="font-sans font-extrabold mt-3.5">100% Safe</h3>
-        <p class="text-xl opacity-60 mt-2 max-w-[32.875rem] pr-[10%]">We ensure our guality product to make sure that
-          our
-          customer
-          will satisfied
-          with our product by following this quality control process</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- quality card section -->
-
-  <section class="flex justify-between">
-    <div class="w-[16.25%] pt-48">
-      <img src="src/assets/img/quality-4.png" alt="quality">
-    </div>
-
-    <div class="container mx-auto pt-16 md:pt-32 pb-10 md:pb-16 lg:pb-24 xl:pb-36">
-      <div
-        class="max-w-[711px] mx-auto flex flex-wrap items-center  justify-center gap-y-10 gap-5 md:gap-10 text-center">
-        <div class="w-32 sm:w-[11.063rem]">
-          <div class="w-16 sm:w-24 h-16 sm:h-24 mx-auto bg-[#EEEEEE] rounded-full flex items-center justify-center">
-            <img class="w-9 sm:w-11" src="src/assets/icon/quality-box-1.png" alt="icon">
-          </div>
-          <h5 class="mt-4 text-lg font-semibold">Sourcing</h5>
-          <p class="text-primary/60 text-sm sm:text-base mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="w-32 sm:w-[11.063rem]">
-          <div class="w-16 sm:w-24 h-16 sm:h-24 mx-auto bg-[#EEEEEE] rounded-full flex items-center justify-center">
-            <img class="w-9 sm:w-11" src="src/assets/icon/quality-box-2.png" alt="icon">
-          </div>
-          <h5 class="mt-4 text-lg font-semibold">Extraction</h5>
-          <p class="text-primary/60 text-sm sm:text-base mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="w-32 sm:w-[11.063rem]">
-          <div class="w-16 sm:w-24 h-16 sm:h-24 mx-auto bg-[#EEEEEE] rounded-full flex items-center justify-center">
-            <img class="w-9 sm:w-11" src="src/assets/icon/quality-box-3.png" alt="icon">
-          </div>
-          <h5 class="mt-4 text-lg font-semibold">Formulating</h5>
-          <p class="text-primary/60 text-sm sm:text-base mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="w-32 sm:w-[11.063rem]">
-          <div class="w-16 sm:w-24 h-16 sm:h-24 mx-auto bg-[#EEEEEE] rounded-full flex items-center justify-center">
-            <img class="w-9 sm:w-11" src="src/assets/icon/quality-box-4.png" alt="icon">
-          </div>
-          <h5 class="mt-4 text-lg font-semibold">Packaging</h5>
-          <p class="text-primary/60 text-sm sm:text-base mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div class="w-32 sm:w-[11.063rem]">
-          <div class="w-16 sm:w-24 h-16 sm:h-24 mx-auto bg-[#EEEEEE] rounded-full flex items-center justify-center">
-            <img class="w-9 sm:w-11" src="src/assets/icon/quality-box-5.png" alt="icon">
-          </div>
-          <h5 class="mt-4 text-lg font-semibold">Transparency</h5>
-          <p class="text-primary/60 text-sm sm:text-base mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
         </div>
       </div>
     </div>
-    <div class="max-w-[15.556%] pt-10 sm:pt-20">
-      <img src="src/assets/img/quality-3.png" alt="quality">
-    </div>
-  </section>
+  </header>
 
-  <!-- Changing and Growing With You section -->
+  <div class="container mx-auto lg:px-[10.625rem] py-8">
+    <h1 class="text-2xl sm:text-3xl lg:text-4.1xl font-extrabold lg:leading-12  mb-4 text-center">Frequently Asked
+      Questions</h1>
 
-  <section class="flex flex-col sm:flex-row items-center justify-between pt-5 pb-7">
-    <div class="w-full sm:w-[56.666%]">
-      <img src="src/assets/img/changing-img-1.png" alt="changing-img">
+    <!-- Contact Information -->
+    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-8">
+      <div class="text-center inline-flex gap-3.5">
+        <img class="w-6 " src="src/assets/icon/sms-black.png" alt="message">
+        <p class="">text@example.com</p>
+      </div>
+      <div class="text-center inline-flex gap-3.5">
+        <img class="w-6" src="src/assets/icon/call-black.png" alt="call">
+        <p class=" font-sans">+62 5261 5261 6323</p>
+      </div>
     </div>
-    <div class="w-full sm:w-[16.389%]">
-      <div class="max-w-[27.813rem] mx-auto px-2 sm:-ml-14 md:-ml-28 lg:-ml-36 sm:-mr-20 mt-10 md:mt-0">
-        <h2 class="leading-14">Changing and Growing With You.</h2>
-        <p class=" opacity-60 mt-4 text-xl leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Iaculis odio dictum amet in. Mi molestie</p>
-        <button class="btn mt-13">Try It Now</button>
+
+    <!-- Search Input with Icon -->
+    <div class="flex justify-center">
+      <div class="relative w-full">
+        <input type="text" placeholder="Search"
+          class="bg-secondary pl-20 pr-4 py-4 w-full text-primary/80 placeholder:text-base placeholder:text-primary/40">
+        <svg class="absolute left-9 top-1/2 transform -translate-y-1/2 opacity-40" xmlns="http://www.w3.org/2000/svg"
+          width="28" height="28" fill="none">
+          <path stroke="#313131" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M13.417 24.5c6.12 0 11.083-4.962 11.083-11.083 0-6.122-4.962-11.084-11.083-11.084-6.122 0-11.084 4.962-11.084 11.084 0 6.12 4.962 11.083 11.084 11.083ZM25.667 25.667l-2.334-2.334" />
+        </svg>
+      </div>
+    </div>
+    <!-- Accordion Section -->
+    <div class="mt-20">
+      <!-- Accordion Item -->
+      <h3 class="mb-7">Basic Question</h3>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">What is CBD</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Psychoactive</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Legal</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">How long does it stay</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Drug Test</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Different with other company</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">How does it affect you</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Hemp oil vs CBD oil</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Does it contain THC</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Will it work for me</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Refer a friend</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Recent bottle is different? Why?</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Can I take more than once a day</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Is there any guide file</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
       </div>
 
+      <!-- Add more accordion items here if needed -->
     </div>
-    <div class="w-full sm:w-[27.013%]">
-      <img src="src/assets/img/changing-img-2.png" alt="changing-img">
+    <div class="mt-17">
+      <!-- Accordion Item -->
+      <h3 class="mb-7">Product</h3>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">How to take</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Storage</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Sourcing</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">How long does it stay</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Drug Test</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+
+
+      <!-- Add more accordion items here if needed -->
     </div>
-  </section>
+    <div class="mt-17">
+      <!-- Accordion Item -->
+      <h3 class="mb-7">Order</h3>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">How to take</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Storage</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Sourcing</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">How long does it stay</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">Drug Test</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+
+
+      <!-- Add more accordion items here if needed -->
+    </div>
+    <div class="mt-17">
+      <!-- Accordion Item -->
+      <h3 class="mb-7">Sample</h3>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">How to take</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Storage</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+
+
+      <!-- Add more accordion items here if needed -->
+    </div>
+    <div class="mt-17">
+      <!-- Accordion Item -->
+      <h3 class="mb-7">Contact Us</h3>
+      <div class="even:bg-secondary">
+        <button class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center">
+          <span class="accordian-btn">How to take</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+      <div class="odd:bg-white">
+        <button
+          class="accordion-title w-full text-left px-9 py-5 flex justify-between items-center border border-[#EBEAEA]">
+          <span class="accordian-btn">Storage</span>
+          <svg class="w-4 transition-transform transform opacity-60" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="accordion-content pt-2.5 pb-7 px-9 hidden">
+          <p class="text-xl leading-8 opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat nisi
+            tortor
+            auctor maecenas pretium.
+            Varius nibh aenean enim, nibh augue eget. Pellentesque proin cras dui hendrerit. Turpis Lobortis pulvinar
+            molestie blandit diam tincidunt.</p>
+
+        </div>
+      </div>
+
+
+      <!-- Add more accordion items here if needed -->
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-primary text-white/60 text-base leading-4.9 font-normal">
     <div class="container">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 lg:gap-6 lg:px-10 pt-20">
         <div class="w-full sm:max-w-[309px]">
-          <div class="w-[228px] cursor-pointer">
+          <a href="index.html" class="w-32 sm:w-[228px] block">
             <img src="src/assets/icon/performa-logo-white.png" alt="Performa Logo">
-          </div>
+          </a>
           <h5 class="text-lg text-white mt-9 mb-5">Contact Us</h5>
           <a href="#" class="font-sans flex items-center gap-4 text-white/60 pb-2.5">
             <img class="w-4 " src="src/assets/icon/call.png" alt="call">
@@ -257,13 +679,13 @@
         <div class="flex justify-between flex-wrap gap-10">
           <div class="flex flex-col space-y-7">
             <a href="#">Membership</a>
-            <a href="#">Products</a>
+            <a href="product.html">Products</a>
             <a href="#">Stories</a>
-            <a href="#">What’s CBD?</a>
+            <a href="whats-cbd.html">What’s CBD?</a>
           </div>
           <div class="flex flex-col space-y-7">
-            <a href="#">Mission</a>
-            <a href="#">Quality</a>
+            <a href="testimonial.html">Mission</a>
+            <a href="quality.html">Quality</a>
             <a href="#">Help</a>
             <a href="#">Referral</a>
           </div>

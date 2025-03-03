@@ -11,6 +11,7 @@ export default defineConfig({
         testimonial: path.resolve(__dirname, 'testimonial.html'),
         quality: path.resolve(__dirname, 'quality.html'),
         help: path.resolve(__dirname, 'help.html'),
+        product: path.resolve(__dirname, 'product.html'),
       },
     },
   },
