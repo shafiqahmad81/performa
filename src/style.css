@@ -172,7 +172,7 @@ body{
 
 @layer components{
   .btn{
-    @apply bg-primary px-5.5 py-4.9 rounded-extra-lg text-white text-extra-xs leading-3.7 font-bold
+    @apply bg-primary px-5.5 py-4.9 rounded-extra-lg text-white text-extra-xs leading-3.7 font-bold transition-all duration-500 hover:bg-primary/80
   }
   .hero-card-item{
     @apply text-center relative md:before:absolute before:top-5 before:bottom-6 before:-right-6 xl:before:-right-12 before:w-px before:bg-primary/20
